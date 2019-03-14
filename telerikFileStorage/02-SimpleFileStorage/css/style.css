@@ -1,0 +1,97 @@
+/* 
+    Document   : style
+    Created on : Sep 19, 2013, 10:28:09 PM
+    Author     : nzhul
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {background: #33363b url(../img/bg.jpg)repeat-x;font-family: Tahoma;font-size: 14px;}
+#wrapper {width: 600px;margin: 0 auto;position: relative;top: 100px;}
+h1 {color: #ffffff;font-size: 50px;float: left; font-weight: normal;}
+h1 a {color: white;text-decoration: none;}
+h2 {color: #ffffff; font-size: 22px;float: left;position: relative;left: -102px;top:5px; font-weight: normal;}
+#navigation {float: left;width: 598px;height: 36px; background: #636363;}
+table {color: #949494; border-collapse: collapse;width: 600px;margin-left: -1px;position: relative;top:10px;float: left;z-index: 2;}
+td {background: #555555; border: 1px solid #363636; padding: 10px; text-align: center;}
+tr:first-child td, tr:last-child td {background: #464646;}
+.sum {font-weight: bold;color: #e0e0e0;}
+input[type="submit"] {background: #e0e0e0;border: 1px solid #949494; width: 70px; height: 30px; padding-left: 5px; color: #1c1c1c;cursor: pointer;}
+input {background: #e0e0e0;border: 1px solid #949494; width: 180px;height: 25px;padding-left: 10px;background: #282828; color: #e0e0e0; }
+select {background: #e0e0e0;border: 1px solid #949494; width: 190px;height: 30px;padding-left: 10px;background: #282828; color: #e0e0e0;}
+/*#shadow {width: 453px; height: 81px;background: url(../img/shadow.png)no-repeat center bottom;position: relative;top: -35px;z-index: 1;}*/
+.btn {display: block;width: 15px;height: 15px; margin: 0 auto;}
+.del {background: url(../img/delete.png)no-repeat;text-indent: -9999px; height: 16px;}
+.edit {background: url(../img/edit.png)no-repeat;text-indent: -9999px;}
+td a {color: #93c72e; text-decoration: none;}
+td a:hover {color: #93c72e; text-decoration: underline;}
+
+#fname {
+    width: 86px;
+    position: relative;
+    top:-6px;
+    height: 36px;
+    cursor: pointer;
+    text-indent: -9999px;
+    border: none;
+    background: url(../img/uploadfilebtn.jpg)no-repeat;
+}
+#fnameLoaded {    
+    width: 86px;
+    position: relative;
+    top:-6px;
+    height: 36px;
+    cursor: pointer;
+    text-indent: -9999px;
+    border: none;
+    background: url(../img/uploadfilebtn.jpg)no-repeat;
+    background-position: 0px -72px;}
+
+#fname:hover {background-position: 0px -36px;}
+#menu input[type="submit"] {height: 29px;}
+
+
+/*Initialize*/
+ul#menu, ul#menu ul.sub-menu {
+    padding:0;
+    margin: 0;
+    margin-top: 3px;
+}
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    background: #636363;
+    padding: 8px 10px 0 10px;
+    display:inline-block;
+    height: 28px;
+    margin-top: -3px;
+}
+ul#menu li ul.sub-menu li a 
+{
+    width: 65px;
+}
+ul#menu li a:hover, ul#menu li ul.sub-menu li a:hover
+{
+    background: #8a8a8a;
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100px;
+    z-index: 3;
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+}
